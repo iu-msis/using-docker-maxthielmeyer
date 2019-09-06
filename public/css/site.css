@@ -1,0 +1,36 @@
+#nav{
+  background-color: rgb(255, 249, 208);
+}
+
+
+.titleLink{
+  font-size: 28px;
+  color: crimson;
+}
+
+#bookTable{
+  margin-left: 20%;
+}
+
+#contactInfo{
+  font-size: 22px;
+}
+
+a:link{
+  color:green;
+}
+.content{
+  text-align: center;
+}
+
+.card{
+  display: inline-block;
+}
+
+body{
+  background-color:tan;
+}
+
+input{
+  width:50%!important;
+}

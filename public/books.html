@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <title>User Profile - Tony Kennedy</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/site.css">
+
+</head>
+<body>
+  <nav id="nav" class="navbar navbar-light">
+    <h2> Tony Kennedy </h2>
+  <a class="titleLink" href="./index.html"> Tony's Profile </a>
+  <a class="titleLink" href="./books.html"> Tony's Book Club </a>
+  <a class="titleLink" href="./photos.html"> Tony's Photo Gallery </a>
+</nav>
+<div id="bookTable">
+  <table class="sortable-theme-dark" data-sortable>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author(s)</th>
+      <th>Year</th>
+      <th>Publisher</th>
+      <th>Pages</th>
+      <th>MSRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b> The Adventures of Huckleberry Finn </b></td>
+      <td>Twain, Mark</td>
+      <td>1884</td>
+      <td>Penguin Classics</td>
+      <td>366</td>
+      <td>$4.56</td>
+    </tr>
+    <tr>
+      <td><b> Brave New World </b></td>
+      <td>Huxley, Aldous</td>
+      <td>1931</td>
+      <td>Chatto & Windus</td>
+      <td>311</td>
+      <td>$12.99</td>
+    </tr>
+    <tr>
+      <td><b>Slaughterhouse Five</b></td>
+      <td>Vonnegut, Kurt</td>
+      <td>1969</td>
+      <td>Dell Publishing</td>
+      <td>229</td>
+      <td>$8.43</td>
+    </tr>
+    <tr>
+      <td><b>Harry Potter</b></td>
+      <td>Rowling, J.K.</td>
+      <td>1997</td>
+      <td>Bloomsbury</td>
+      <td>223</td>
+      <td>$14.99</td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <form>
+      <div class="form-group">
+        <label for="TitleInput">Title</label>
+        <input type="text" class="form-control" id="TitleInput">
+      </div>
+      <div class="form-group">
+        <label for="AuthorInput">Author's Name</label>
+        <input type="text" class="form-control" id="AuthorInput">
+      </div>
+      <div class="form-group">
+        <label for="YearInput">Year Published</label>
+        <input type="number"class="form-control" id="YearInput">
+      </div>
+      <div class="form-group">
+        <label for="PublisherInput">Publisher</label>
+        <input type="text" class="form-control" id="PublisherInput">
+      </div>
+      <div class="form-group">
+        <label for="PagesInput">Page Count</label>
+        <input type="number" class="form-control" id="PagesInput">
+      </div>
+      <div class="form-group">
+        <label for="MSRPInput">MSRP</label>
+        <input type="number" class="form-control" id="MSRPInput">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+  </div>
+  <script src="js/sortable.min.js"></script>
+
+</body>
+</html>
