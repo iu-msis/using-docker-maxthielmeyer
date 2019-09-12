@@ -31,6 +31,10 @@ body{
   background-color:tan;
 }
 
+.profile{
+  size:100px;
+}
+
 input{
   width:50%!important;
 }

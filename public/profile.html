@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <title>User Profile</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+  <nav id="nav" class="navbar navbar-light">
+    <h2> Cool Users! </h2>
+  <a class="titleLink" href="./profile.html"> User Profile </a>
+  <a class="titleLink" href="./table.html"> User's Book Club </a>
+  <a class="titleLink" href="./photos.html"> User's Photo Gallery </a>
+</nav>
+
+<div class="content">
+  <h1>Welcome to my site!</h1>
+  <div id="profileApp">
+      <h2> {{people.results[0].name.first}} {{people.results[0].name.last}} </h2>
+      <a href={{people.results[0].picture.large}}> <img class="img-thumbnail" src={{people.results[0].picture.large}} width=150px> </a>
+      <br>
+      <cite> https://premierespeakers.com/ben-stein </cite>
+      <br>
+      <div id="contactInfo">
+      Place of origin: <b>{{people.results[0].location.city}}, {{people.results[0].location.state}}</b>
+      <br>
+      Birthdate: <b> {{people.results[0].dob.date}} </b>
+      <br>
+      Age: <b> {{people.results[0].dob.age}} </b>
+      <br>
+      <a href="mailto:tonykennedy@tonykennedy.com">  <h3> Email me! </h3> </a>
+    </div>
+
+
+
+
+
+      {{people.email}}
+      {{people.title}}
+    </div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/profile.app.js"></script>
+<!-- <script src="js/waiting.app.js"></script> -->
+
+</body>
+</html>
