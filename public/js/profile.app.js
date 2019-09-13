@@ -5,8 +5,7 @@ var profileApp = new Vue({
   },
   methods: {
     fetchProfile() {
-      // Means the same at this
-      fetch('./randomuser.me-sample.json')
+      fetch('https://randomuser.me/api')
       .then(response => response.json())
       .then(json => {profileApp.people = json})
     }
