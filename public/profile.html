@@ -32,10 +32,17 @@
       <br>
       <a v-bind:href="'mailto:' + people.results[0].email">  <h3> Email me! </h3> </a>
     </div>
+    <form v-on:submit.prevent="onSubmit">
+      <button type="submit">New profile</button>
+    </form>
     </template>
     </div>
-    </div>
 
+
+
+
+
+    </div>
 
 </div>
 

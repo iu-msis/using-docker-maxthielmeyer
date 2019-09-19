@@ -8,6 +8,11 @@ var profileApp = new Vue({
       fetch('https://randomuser.me/api')
       .then(response => response.json())
       .then(json => {profileApp.people = json})
+    },
+    onSubmit(){
+      fetch('https://randomuser.me/api')
+      .then(response => response.json())
+      .then(json => {profileApp.people = json})
     }
   },
   created() {
